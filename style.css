@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+.header {
+  background: rgba(53, 70, 85, 0.096);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.header h1 {
+  animation: bounce 3s ease-in-out infinite;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  transition: all 0.5s linear;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.section-center {
+  height: 90vh;
+  background: rgba(0, 0, 0, 0.082);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-center div {
+  border: 3px solid black;
+  background: black;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.2rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-center div span {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.new-text {
+  text-transform: capitalize;
+  font-size: 3rem;
+  color: rgb(212, 79, 79);
+}
+
+@media screen and (min-width: 720px) {
+  .header h1 {
+    font-size: 20px;
+  }
+  .section-center div {
+    padding: 1rem 1rem;
+    margin-right: 1.3rem;
+    font-size: 1.3rem;
+  }
+}
